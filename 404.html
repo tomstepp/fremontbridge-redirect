@@ -18,10 +18,11 @@
     <meta property="og:image:alt" content="The Fremont Bridge's blue span raised over the ship canal" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Keep the path, so fremontbridge.com/ballard/ lands on seattle-bridges.com/ballard/.
+    <!-- Keep the path, so fremontbridge.com/ballard/ lands on seattle-bridges.com/ballard.
          The meta refresh is the fallback when scripts are off. -->
     <script>
-      location.replace("https://seattle-bridges.com" + location.pathname + location.search + location.hash);
+      // The new site drops the trailing slash: /ballard/ goes to /ballard.
+      location.replace("https://seattle-bridges.com" + location.pathname.replace(/(.)\/+$/, "$1") + location.search + location.hash);
     </script>
     <meta http-equiv="refresh" content="0; url=https://seattle-bridges.com/" />
   </head>

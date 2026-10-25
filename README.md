@@ -2,7 +2,7 @@
 
 Forwards fremontbridge.com to [seattle-bridges.com](https://seattle-bridges.com),
 where the site now lives (source: the `fremont-bridge` repo). It keeps the
-path, so `fremontbridge.com/ballard/` lands on `seattle-bridges.com/ballard/`.
+path, so `fremontbridge.com/ballard/` lands on `seattle-bridges.com/ballard`.
 
 Served by GitHub Pages straight from `main`, with no build. `404.html` is the
 same page as `index.html`, so every old address forwards too. The link-preview
