@@ -12,3 +12,7 @@ Namecheap's own URL redirect can't do HTTPS, which is why this repo exists.
 
 `img/og*.jpg` are copies of the link-preview images, so cards for links shared
 before the move still find their picture at the old address.
+
+`ballard/`, `university/` and `montlake/` have their own copies with that
+bridge's title and preview, so old links to them get a normal response and the
+right card instead of the 404 page.
